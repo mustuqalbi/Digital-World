@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar Section Start  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Technology</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Types
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/computer.html">Computers</a></li>
+                            <li><a class="dropdown-item" href="/laptop.html">Laptops</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn bg-light text-dark" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End  -->
+    <!-- Login Modal  Start-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to Technology</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputtext" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="exampleInputtext" aria-describedby="textHelp">
+                            <div id="textHelp" class="form-text">We'll never share your Username with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal  End-->
+    <!-- SignUp Modal Start -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Get an Login acount</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <label for="username" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name..." required="">
+                    <div class="invalid-feedback">
+                        Please enter your shipping address.
+                    </div>
+                    <br>
+                    <label for="username" class="form-label">Phone Number</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text">+92</span>
+                        <input type="text" class="form-control" id="username" placeholder="phone number" required="">
+                        <div class="invalid-feedback">
+                            Your username is required.
+                        </div>
+                    </div>
+                    <br>
+                    <label for="email" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                    </div>
+                    <br>
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="permanent address" required="">
+                    <div class="invalid-feedback">
+                        Please enter your shipping address.
+                    </div>
+                    <br>
+                    <label for="gender" class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal End-->
+    <!-- carousel Section Start -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="1.2.png" class="d-block w-100" alt="Loading...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Hacking</h3>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-success">Hacking</button>
+                    <button type="button" class="btn btn-danger">Programing</button>
+                    <button type="button" class="btn btn-info">Web Developer</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="1.3.jpg" class="d-block w-100" alt="Loading...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Programing</h3>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <button type="button" class="btn btn-dark">Hacking</button>
+                    <button type="button" class="btn btn-danger">Programing</button>
+                    <button type="button" class="btn btn-info">Web Developer</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="1.4.jpg" class="d-block w-100" alt="Loading...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Web Developer</h3>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    <button type="button" class="btn btn-dark">Hacking</button>
+                    <button type="button" class="btn btn-danger">Programing</button>
+                    <button type="button" class="btn btn-info">Web Developer</button>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- carousel Section End-->
+    <!-- Slide Cards Section Start  -->
+    <div class="container my-3">
+        <div class="card-group row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="card shadow-sm">
+                <img src="2.7.jpg" class="card-img-top" alt="dropdown img">
+                <div class="card-body">
+                    <h4 class="card-title">Hacking</h4>
+                    <p class="card-text">THacking refers to activities that seek to compromise digital devices, such
+                        as computers, smartphones, tablets, and even entire networks. And while hacking might not
+                        always be for malicious purposes, nowadays most references to hacking, and hackers,
+                        characterize it/them as unlawful activity by cybercriminals—motivated by financial gain,
+                        protest, information gathering (spying), and even just for the “fun” of the challenge.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <img src="2.2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Programming</h4>
+                    <p class="card-text">Programming is the implementation of logic to facilitate specified
+                        computing operations and functionality. It occurs in one or more languages, which differ by
+                        application, domain and programming model. Programming language semantics and syntax are
+                        used when constructing an application. Thus, programming requires knowledge of
+                        domains,and programming language expertise.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <img src="2.3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Web development</h4>
+                    <p class="card-text">Web development is the building and maintenance of websites; it’s the work
+                        that happens behind the scenes to make a website look great, work fast and perform well with
+                        a seamless user experience.Web developers, or ‘devs’, do this by using do this by using a
+                        variety of coding
+                        languages. The languages they use depends on the types of tasks they are preforming and the
+                        platforms on which they are working.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide Cards Section Start  -->
+    <!-- Footer Section Start -->
+    <div class="LegalBlock-module__legalBlock___yHQL3">
+        <hr>
+        <p class="LegalBlock-module__footerCopy___uGjhB d-flex justify-content-center align-item-center bg-dark text-light"
+            data-testid="footer-copy">© 2022 Updated Hacking,Programing and Web-Developer site.</p>
+        <hr>
+    </div>
+    <!-- Footer Section End  -->
+    <!-- Script Section start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Script Section End  -->
+</body>
+
+</html>
